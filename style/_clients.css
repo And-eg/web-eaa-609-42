@@ -36,3 +36,8 @@
     color: #00000099;
     margin: 0;
 }
+
+.section-title {
+    text-align: center;  
+    margin-bottom: 60px; 
+}
