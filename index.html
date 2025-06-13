@@ -15,29 +15,65 @@
 
 <body>
   <header>
-    <div class="container">
-      <nav class="desktop-navigation">
-        <a href="#" class="desktop-navigation__logo">SHOP.CO</a>
-        <ul class="desktop-navigation__list">
-          <li class="desktop-navigation__list-element">
-            <a href="#">Shop</a>
-          </li>
-          <li class="desktop-navigation__list-element">
-            <a href="#">On Sale</a>
-          </li>
-          <li class="desktop-navigation__list-element">
-            <a href="#">New Arrivals</a>
-          </li>
-          <li class="desktop-navigation__list-element">
-            <a href="#">Brands</a>
-          </li>
-        </ul>
-        <div class="desktop-navigation__buttons">
-          <button class="button_light-sm">Login</button>
-          <button class="button_primary-sm">Register</button>
+    <nav class="desktop-navigation">
+      <div class="container">
+        <div class="desktop-navigation__wrap">
+          <a href="#" class="desktop-navigation__logo">SHOP.CO</a>
+          <ul class="navigation__list">
+            <li class="navigation__list-element">
+              <a href="#">Shop</a>
+            </li>
+            <li class="navigation__list-element">
+              <a href="#">On Sale</a>
+            </li>
+            <li class="navigation__list-element">
+              <a href="#">New Arrivals</a>
+            </li>
+            <li class="navigation__list-element">
+              <a href="#">Brands</a>
+            </li>
+          </ul>
+          <div class="navigation__buttons">
+            <button class="button_light-sm">Login</button>
+            <button class="button_primary-sm">Register</button>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
+    <nav class="mobile-navigation">
+      <div class="mobile-navigation__wrap">
+        <div class="container">
+          <div class="mobile-navigation__header">
+            <a href="#" class="mobile-navigation__logo">SHOP.CO</a>
+            <button class="mobile-navigation__header-button">
+              <img src="img/menu-open.svg" alt="Open menu" class="icon_menu-open">
+              <img src="img/menu-close.svg" alt="Close menu" class="icon_menu-close">
+            </button>
+          </div>
+          <div class="mobile-navigation__content">
+            <ul class="navigation__list">
+              <li class="navigation__list-element">
+                <a href="#">Shop</a>
+              </li>
+              <li class="navigation__list-element">
+                <a href="#">On Sale</a>
+              </li>
+              <li class="navigation__list-element">
+                <a href="#">New Arrivals</a>
+              </li>
+              <li class="navigation__list-element">
+                <a href="#">Brands</a>
+              </li>
+            </ul>
+            <div class="navigation__buttons">
+              <button class="button_light-sm">Login</button>
+              <button class="button_primary-sm">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
     <section class="promo">
@@ -59,12 +95,10 @@
               <div class="promo__stat-number">200+</div>
               <div class="promo__stat-text">International Brands</div>
             </div>
-            <div class="stat-divider"></div>
             <div class="promo__stat">
               <div class="promo__stat-number">2,000+</div>
               <div class="promo__stat-text">High-Quality Products</div>
             </div>
-            <div class="stat-divider"></div>
             <div class="promo__stat">
               <div class="promo__stat-number">30,000+</div>
               <div class="promo__stat-text">Happy Customers</div>
@@ -141,7 +175,7 @@
 
     <section class="unlock">
       <div class="style-container">
-        <h2 class="section-title">BROWSE BY <span class="dress-style">dress</span> STYLE</h2>
+        <h2 class="section-title">BROWSE BY <span class="dress-style">dress STYLE</span></h2>
         <div class="style-grid">
           <div class="style-card casual">
             <img src="img/casual-style.svg" alt="Casual Style" class="style-image">
@@ -162,7 +196,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="clients">
       <div class="container">
         <h2 class="section-title">OUR HAPPY CUSTOMERS</h2>
@@ -210,7 +244,6 @@
       </div>
     </section>
   </main>
-  
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -270,6 +303,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ body {
     font-style: normal;
     color: rgba(0, 0, 0, 0.6);
     line-height: 24px;
-    min-width: 320px; 
+    min-width: 320px;
 }
 
 
@@ -33,10 +33,12 @@ ul {
 
 .container {
     max-width: 1240px;
-    width: 100%; 
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
+
+    @media (max-width: 390px) {
+        padding: 0 16px; 
+    }
 }
 
 .section-title {
@@ -52,7 +54,7 @@ ul {
     text-align: center;
 }
 
-.button_light-sm, 
+.button_light-sm,
 .button_primary-sm {
     padding: 16px 24px;
     border-radius: 62px;
@@ -84,16 +86,20 @@ ul {
 }
 
 
-a, button, .product-card, .style-card {
+a,
+button,
+.product-card,
+.style-card {
     transition: all 0.3s ease;
 }
 
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     opacity: 0.9;
 }
 
-.product-card:hover, 
+.product-card:hover,
 .style-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
