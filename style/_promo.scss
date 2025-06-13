@@ -1,24 +1,50 @@
 .promo {
-    background-color: #F2F0F1;
-    overflow: hidden;
+  background-color: #F2F0F1;
+  overflow: hidden;
+  padding-top: 100px; /* Отступ от навигации */
+
+  @media (max-width: 390px) {
+    padding-top: 60px;
+  }
 }
 
 .promo__container {
-    display: flex;
-    padding-left: 100px;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 100px;
+  box-sizing: border-box;
+
+  @media (max-width: 390px) {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .promo__content {
-    padding: 109px 0;
+  padding: 0 0 109px 0; 
+  
+  @media (max-width: 390px) {
+    padding: 0 0 40px 0;
+  }
 }
 
 .promo__container img {
-    max-width: 100%;
+  width: 715px;
+  height: 663px;
+  object-fit: cover;
+  align-self: flex-end;
+
+  @media (max-width: 390px) {
+    order: 2;
+    width: 100%;
     height: auto;
-    align-self: flex-end;
+    max-width: 390px;
+    margin-top: 20px;
+    align-self: center;
+  }
 }
 
 .promo__title {
@@ -92,9 +118,8 @@
     }
 
     .promo__content {
-        padding: 40px 0;
-        order: 1;
-        width: 100%;
+        padding: 0px 0;
+        
     }
 
     .promo__container img {
