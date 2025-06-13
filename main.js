@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileNavigation.classList.toggle('opened');
     });
     
-    // Закрытие меню при клике на ссылки
     const menuLinks = document.querySelectorAll('.mobile-navigation .navigation__list a');
     menuLinks.forEach(link => {
         link.addEventListener('click', function() {
