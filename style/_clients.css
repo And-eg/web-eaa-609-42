@@ -1,0 +1,38 @@
+.clients {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: transparent;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.testimonial-header {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.client-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #000;
+    margin-right: 8px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: #00000099;
+    margin: 0;
+}

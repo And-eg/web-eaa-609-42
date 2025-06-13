@@ -1,0 +1,37 @@
+.desktop-navigation {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-navigation__logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 40px;
+}
+
+.desktop-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-right: auto;
+}
+
+.desktop-navigation__list-element a {
+    font-size: 16px;
+    color: #000;
+}
+
+.desktop-navigation__list-element_active a {
+    font-weight: 600;
+}
+
+.desktop-navigation__buttons {
+    display: flex;
+    gap: 20px;
+}
