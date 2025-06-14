@@ -582,14 +582,16 @@ button:hover {
   }
 }
 
-.section-title {
+.section-unlock {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 48px;
+  text-align: center;
   margin-bottom: 60px;
+  color: #000;
 }
 @media (max-width: 390px) {
-  .section-title {
+  .section-unlock {
     font-size: 36px;
     margin-bottom: 30px;
     text-align: center;
@@ -889,18 +891,14 @@ button:hover {
 @media (max-width: 390px) {
   .social-icons {
     justify-content: flex-start;
+    margin-bottom: 0px;
+    gap: 10px;
   }
 }
 
 .social-icons img {
   width: 28px;
   height: 28px;
-}
-@media (max-width: 390px) {
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 .footer-links-grid {
@@ -987,4 +985,4 @@ button:hover {
   .copyright {
     font-size: 12px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

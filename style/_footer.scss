@@ -79,17 +79,14 @@
 
   @media (max-width: 390px) {
     justify-content: flex-start;
+    margin-bottom: 0px;
+    gap: 10px;
   }
 }
 
 .social-icons img {
   width: 28px;
   height: 28px;
-
-  @media (max-width: 390px) {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 .footer-links-grid {
