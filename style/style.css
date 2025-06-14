@@ -578,7 +578,6 @@ button:hover {
   .style-container {
     padding: 30px 20px;
     border-radius: 12px;
-    height: auto;
   }
 }
 
@@ -594,8 +593,8 @@ button:hover {
   .section-unlock {
     font-size: 36px;
     margin-bottom: 30px;
-    text-align: center;
-    line-height: 1.3;
+    line-height: 1;
+    padding: 0 20px;
   }
 }
 
@@ -610,9 +609,7 @@ button:hover {
   .style-grid {
     display: flex;
     flex-direction: column;
-    grid-template-areas: unset;
-    grid-template-columns: unset;
-    grid-template-rows: unset;
+    align-items: center;
     gap: 16px;
   }
 }
@@ -630,8 +627,8 @@ button:hover {
 }
 @media (max-width: 390px) {
   .style-card {
-    height: 150px;
-    width: 100%;
+    width: 310px;
+    height: 190px;
   }
 }
 
@@ -640,6 +637,7 @@ button:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 12px;
 }
 
 .style-title {
@@ -663,35 +661,17 @@ button:hover {
   width: 407px;
   height: 289px;
 }
-@media (max-width: 390px) {
-  .casual {
-    width: 100%;
-    height: 150px;
-  }
-}
 
 .formal {
   grid-area: auto;
   width: 684px;
   height: 289px;
 }
-@media (max-width: 390px) {
-  .formal {
-    width: 100%;
-    height: 150px;
-  }
-}
 
 .party {
   grid-area: auto;
   width: 684px;
   height: 289px;
-}
-@media (max-width: 390px) {
-  .party {
-    width: 100%;
-    height: 150px;
-  }
 }
 
 .gym {
@@ -700,14 +680,15 @@ button:hover {
   height: 289px;
   margin-left: auto;
 }
+
 @media (max-width: 390px) {
-  .gym {
-    width: 100%;
-    height: 150px;
-    margin-left: 0;
+  .casual, .formal, .party, .gym {
+    width: 310px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
 .clients {
   padding: 80px 0;
   background-color: #fff;

@@ -19,7 +19,6 @@
   @media (max-width: 390px) {
     padding: 30px 20px;
     border-radius: 12px;
-    height: auto;
   }
 }
 
@@ -34,8 +33,8 @@
   @media (max-width: 390px) {
     font-size: 36px;
     margin-bottom: 30px;
-    text-align: center;
-    line-height: 1.3;
+    line-height: 1; 
+    padding: 0 20px; 
   }
 }
 
@@ -52,12 +51,11 @@
   @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
-    grid-template-areas: unset;
-    grid-template-columns: unset;
-    grid-template-rows: unset;
+    align-items: center;
     gap: 16px;
   }
 }
+
 
 .style-card {
   position: relative;
@@ -72,8 +70,8 @@
   }
 
   @media (max-width: 390px) {
-    height: 150px;
-    width: 100%;
+    width: 310px;
+    height: 190px;
   }
 }
 
@@ -81,6 +79,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .style-title {
@@ -89,7 +88,7 @@
   left: 24px;
   font-size: 36px;
   font-weight: 700;
-  color: #000;
+  color: #000; 
 
   @media (max-width: 390px) {
     font-size: 24px;
@@ -98,37 +97,23 @@
   }
 }
 
+
 .casual {
   grid-area: auto;
   width: 407px;
   height: 289px;
-
-  @media (max-width: 390px) {
-    width: 100%;
-    height: 150px;
-  }
 }
 
 .formal {
   grid-area: auto;
   width: 684px;
   height: 289px;
-
-  @media (max-width: 390px) {
-    width: 100%;
-    height: 150px;
-  }
 }
 
 .party {
   grid-area: auto;
   width: 684px;
   height: 289px;
-
-  @media (max-width: 390px) {
-    width: 100%;
-    height: 150px;
-  }
 }
 
 .gym {
@@ -136,10 +121,14 @@
   width: 407px;
   height: 289px;
   margin-left: auto;
+}
 
-  @media (max-width: 390px) {
-    width: 100%;
-    height: 150px;
-    margin-left: 0;
+
+@media (max-width: 390px) {
+  .casual, .formal, .party, .gym {
+    width: 310px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
